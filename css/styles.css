@@ -58,8 +58,13 @@ input[type="text"] {
 @media (min-width: 1281px) {
 
     .visit:hover {
+        background: #BF2A2A;
+        box-shadow: #BF2A2Ac0 -2px 2px, #BF2A2Aa0 -4px 4px, #BF2A2A80 -6px 6px, #BF2A2A60 -8px 8px;
+    }
+
+    .action_week:hover {
         background: #8c6f23;
-        box-shadow: #6e581ac0 -2px 2px, #6e581aa0 -4px 4px, #6e581a80 -6px 6px, #6e581a60 -8px 8px;
+        box-shadow: #8c6f23c0 -2px 2px, #8c6f23a0 -4px 4px, #8c6f2380 -6px 6px, #8c6f2360 -8px 8px;
     }
 
     .product-nav a::after {
@@ -182,15 +187,14 @@ header {
 
 .visit {
     color: #f2f2f2;
-    background: #8c6f2390;
+    background: #F2414190;
     padding: 5px 50px;
-    border: 4px solid #8c6f23;
+    border: 4px solid #BF2A2A;
     border-radius: 10px;
     text-transform: uppercase;
     font-size: 1.75em;
     transition-duration: 0.3s;
     margin-left: 650px;
-    max-width: 800px;
 }
 
 .visit i {
@@ -206,15 +210,26 @@ header {
     height: 315px;
 }
 
-.account_ad {
+.sale_ad {
     background: #333333;
     text-align: center;
     color: #F2F2F2;
 }
 
-.account_ad p {
+.sale_ad p {
     font-size: 1.625em;
     font-weight: 100;
+}
+
+.action_week {
+    background: #8c6f2390;
+    color: #f2f2f2;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    padding: 5px 50px;
+    border: 4px solid #8c6f23;
+    border-radius: 10px;
+    transition-duration: 0.3s;
 }
 
 .news {
@@ -250,6 +265,23 @@ header {
 
 .product-nav i {
     font-size: 2.75em;
+}
+
+/* Contact button */
+.contact_sticky {
+    position: sticky;
+    top: 125px;
+    margin-top: 32px;
+}
+
+.contact_cta {
+    background: #F2F2F2;
+    color: #333333;
+    border: 1px solid #333333;
+    box-shadow: #5f5f5f60 2px 2px;
+    padding: 15px 75px;
+    font-size: 1.3em;
+    margin-left: 132px;
 }
 
 /* Product lists */
