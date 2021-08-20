@@ -104,7 +104,7 @@ header {
     margin-right: 20px;
 }
 
-.search {
+.search-header {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -247,26 +247,31 @@ header {
 }
 
 .sale_ad {
-    background: var(--dark-grey);
+    background-image: url(../images/explosion.jpg);
+    background-size: cover;
     text-align: center;
     color: var(--white);
-    border: solid 5px var(--yellow);
+    border: solid 5px var(--red);
 }
 
 .sale_ad p {
+    background: var(--red);
+    padding: 5px;
+    text-transform: uppercase;
     font-size: 1.625em;
-    font-weight: 100;
 }
 
 .action_week {
     background: #8c6f2390;
     color: var(--white);
-    font-size: 1.75em;
+    font-size: 1.625em;
     text-transform: uppercase;
     padding: 5px 50px;
     border: 4px solid var(--yellow);
     border-radius: 10px;
     transition-duration: 0.3s;
+    float: right;
+    margin-right: 10px;
 }
 
 .news {
@@ -375,6 +380,32 @@ div img {
 
 .featured .cta {
     float: right;
+}
+
+/* Product Page */
+.product-radio input {
+    display: none;
+}
+
+.product-radio label {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#new:checked~label[for="new"],
+#used:checked~label[for="used"],
+#physical:checked~label[for="physical"],
+#digital:checked~label[for="digital"],
+#xbox:checked~label[for="xbox"],
+#ps4:checked~label[for="ps4"],
+#pc:checked~label[for="pc"],
+#switch:checked~label[for="switch"] {
+    background: #999;
+    color: #fff;
 }
 
 /* Footer */

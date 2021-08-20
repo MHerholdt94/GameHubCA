@@ -19,7 +19,7 @@
         <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
       /></a>
       <nav class="navigation">
-        <div class="search">
+        <div class="search-header">
         <label for="q">Search Gamehub:</i></label>
         <input
           type="text" name="q" id="searchbar"
@@ -88,17 +88,18 @@
         <i class="fas fa-at"></i>
         <h4>Send us an email</h4>
         <form action="submit.php" method="POST">
-          <label for="firstname">First name</label>
           <input type="text" name="firstname" id="firstname">
-          <label for="lastname">Last name</label>
           <input type="text" name="lastname" id="lastname">
-          <label for="email">Email</label>
           <input type="email" name="email" id="email">
-          <label for="comment">Comment</label>
           <textarea id="comment" name="comment" id="comment"></textarea>
-          <input type="checkbox" name="policy" id="policy"><label for="policy">I have read and understood our privacy policy</label>
+          <input type="checkbox" name="policy" id="policy"><label for="policy">I have read and understood our <a href="#">privacy policy</a></label>
           <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Sign up for newsletter</label>
           <input type="submit" name="submit" value="Send message">
+
+          <label for="firstname">First Name</label>
+          <label for="lastname">Last Name</label>
+          <label for="email">Email</label>
+          <label for="comment">Comment</label>
         </form>
       </div>
     </section>
