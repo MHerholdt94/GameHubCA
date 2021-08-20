@@ -12,3 +12,143 @@
     <link href="css/styles.css" rel="stylesheet" />
     <title>GAME HUB - The Universe of Games | Checkout</title>
   </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
+      /></a>
+      <nav class="navigation">
+        <div class="search">
+        <label for="q">Search Gamehub:</i></label>
+        <input
+          type="text" name="q" id="searchbar"
+          placeholder="Search for over 3000 games..."
+          class="search-bar"
+        />
+      </div>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user-alt"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-heart"></i>Favourites</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="back">
+        <a href="#"><i class="fas fa-arrow-left"></i></a>
+      </section>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Video Game</a></li>
+        <li>Checkout</li>
+      </ul>
+    </header>
+    <div class="contact_sticky">
+      <a href="#" class="contact_cta">Contact us</a>
+    </div>
+    <section>
+      <h1>Checkout</h1>
+      <div>
+      <p>Delivery</p>
+      <p>NB! With the purchase of a digital copy you will get an email with a code to use in the store of the chosen platform</p>
+      </div>
+      <div>
+      <p>Payment</p>
+      <form action="submit.php" method="POST">
+        <input type="number" id="card">
+        <select name="month" id="month">
+          <option value="january">01</option>
+          <option value="february">02</option>
+          <option value="march">03</option>
+          <option value="april">04</option>
+          <option value="may">05</option>
+          <option value="june">06</option>
+          <option value="july">07</option>
+          <option value="august">08</option>
+          <option value="september">09</option>
+          <option value="october">10</option>
+          <option value="november">11</option>
+          <option value="december">12</option>
+        </select>
+        <select name="year" id="year">
+          <option value="22">2022</option>
+          <option value="23">2023</option>
+          <option value="24">2024</option>
+          <option value="25">2025</option>
+          <option value="26">2026</option>
+        </select>
+        <input type="number" id="security">
+      </form>
+    </div>
+    <div>
+      <p>Billing</p>
+      <form>
+        <input type="text" name="firstname" id="firstname">
+        <input type="text" name="lastname" id="lastname">
+        <input type="text" name="city" id="city">
+        <input type="text" name="address" id="address">
+        <input type="number" name="postal" id="postal">
+        <select name="country" id="country">
+          <option value="norway">Norway</option>
+          <option value="uk">UK</option>
+          <option value="sweden">Sweden</option>
+          <option value="argentina">Argentina</option>
+        </select>
+        <input type="tel" name="tel" id="tel">
+        <input type="submit" value="Confirm payment">
+      </form>
+    </div>
+    <div>
+      <i class="fas fa-shopping-cart"></i>
+      <h4>Your cart</h4>
+      <ul>
+        <li>Items 399,-</li>
+        <li>Shipping Free</li>
+        <li>TOTAL 399,-</li>
+      </ul>
+      <p>Got a discount code? <a href="#">Click here!</a></p>
+      <div>
+        <img src="images/Placeholder.png" alt="Video Game Box Art">
+        <h4>Video Game</h4>
+        <ul>
+          <li>Platform: PS4</li>
+          <li>Status: New</li>
+          <li>Copy: Digital</li>
+          <li>Price: 399,-</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <p class="copyright">/ &copy; Copyright Game Hub /</p>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="#">Marketplace</a></p>
+      <img src="images/GameHub_Logo.png" alt="Game Hub Logo" />
+      <p><a href="#">Create Account</a></p>
+      <p><a href="#">Login</a></p>
+      <p><a href="#">Contact Us</a></p>
+    </footer>
+  </body>

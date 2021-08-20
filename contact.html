@@ -12,3 +12,103 @@
     <link href="css/styles.css" rel="stylesheet" />
     <title>GAME HUB - The Universe of Games | Contact Us</title>
   </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
+      /></a>
+      <nav class="navigation">
+        <div class="search">
+        <label for="q">Search Gamehub:</i></label>
+        <input
+          type="text" name="q" id="searchbar"
+          placeholder="Search for over 3000 games..."
+          class="search-bar"
+        />
+      </div>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user-alt"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-heart"></i>Favourites</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="back">
+        <a href="#"><i class="fas fa-arrow-left"></i></a>
+      </section>
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li>Contact Us</li>
+      </ul>
+    </header>
+    <h1 class="contact-header">Contact</h1>
+    <section>
+      <div>
+        <i class="fas fa-phone-alt"></i>
+        <h4>Give us a call</h4>
+        <p>+47 1234 5678</p>
+        <p>Opening hours:</p>
+        <ul>
+          <li>Mon - Fri: 09 - 16</li>
+          <li>Saturday: 10 - 14</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Find us on Facebook</li>
+          <li>Follow us on Twitter</li>
+          <li>Follow us on Instagram</li>
+        </ul>
+      </div>
+      <div>
+        <i class="fas fa-at"></i>
+        <h4>Send us an email</h4>
+        <form action="submit.php" method="POST">
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname">
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" id="comment"></textarea>
+          <input type="checkbox" name="policy" id="policy"><label for="policy">I have read and understood our privacy policy</label>
+          <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Sign up for newsletter</label>
+          <input type="submit" name="submit" value="Send message">
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p class="copyright">/ &copy; Copyright Game Hub /</p>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="#">Marketplace</a></p>
+      <img src="images/GameHub_Logo.png" alt="Game Hub Logo" />
+      <p><a href="#">Create account</a></p>
+      <p><a href="#">Login</a></p>
+      <p><a href="#">Support</a></p>
+    </footer>
+  </body>
