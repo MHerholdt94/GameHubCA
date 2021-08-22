@@ -20,7 +20,7 @@
       /></a>
       <nav class="navigation">
         <div class="search-header">
-        <label for="q">Search Gamehub:</i></label>
+        <label for="q">Search Gamehub:</label>
         <input
           type="text" name="q" id="searchbar"
           placeholder="Search for over 3000 games..."
@@ -64,150 +64,131 @@
         <li>Marketplace</li>
       </ul>
     </header>
-    <div>
+    <div class="mp-image">
       <h1>Welcome to the universe of games</h1>
-      <p>Buy the newest releases or see if you can find some old classics</p>
-      <p>What are you interested in?</p>
-      <a href="#">New</a>
-      <a href="#">Old</a>
+      <p class="mp-headtext">Buy the newest releases or see if you can find some old classics</p>
+      <p class="mp-ctatext">What are you interested in?</p>
+      <div class="mp-cta">
+        <a href="#" class="mp-new">New</a>
+        <a href="#" class="mp-old">Old</a>
+      </div>
     </div>
     <div class="contact_sticky">
       <a href="#" class="contact_cta">Contact us</a>
     </div>
-    <section>
+    <section class="mp-nav">
       <h2>Game Hub Marketplace</h2>
-      <div>
+      <div class="mp-sort">
         <span>Sort by:</span>
+        <input type="radio" name="sort" id="recommended" checked>
         <input type="radio" name="sort" id="genre">
         <input type="radio" name="sort" id="platform">
         <input type="radio" name="sort" id="year">
-        <input type="radio" name="sort" id="recommended">
-        <input type="radio" name="sort" id="used">
+        <input type="radio" name="sort" id="esrb">
+
+        <label for="recommended">Recommended</label>
+        <label for="genre">Genre</label>
+        <label for="platform">Platform</label>
+        <label for="year">Release Year</label>
+        <label for="esrb">ESRB Rating</label>
       </div>
-      <div class="search-store">
-        <label for="q">Search:</i></label>
+      <div class="mp-search">
+        <label for="mp-searchbar">Search:</label>
         <input
-          type="text" name="q" id="searchbar"
+          type="text" name="mp-searchbar" id="mp-searchbar"
           placeholder="Search for over 3000 games..."
-          class="search-bar"
+          class="mp-search-bar"
         />
       </div>
-      <section class="featured">
-        <h4 class="product__header">New this month</h4>
-        <section class="products__list">
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-        </section>
-        <h4 class="product__header">Pre-order</h4>
-        <section class="products__list">
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-        </section>
-        <h4 class="product__header sale__header">Sale</h4>
-        <section class="products__list sale">
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="sale__price">299,-</span><span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="sale__price">299,-</span><span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="sale__price">299,-</span><span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="sale__price">299,-</span><span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-          <div class="product">
-            <img src="images/Placeholder.png" alt="Video Game Cover" />
-            <h5>Video game</h5>
-            <p>Lorem ipsum dolor sit amet</p>
-            <span class="sale__price">299,-</span><span class="price">599,-</span>
-            <a href="#" class="cta">View</a>
-          </div>
-        </section>
     </section>
+      <section class="featured">
+        <h4 class="product__header">Recommended for you</h4>
+        <section class="products__list">
+          <div class="product">
+            <img src="images/Placeholder.png" alt="Video Game Cover" />
+            <h5>Video game</h5>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="price">599,-</span>
+            <a href="#" class="cta">View</a>
+          </div>
+          <div class="product">
+            <img src="images/Placeholder.png" alt="Video Game Cover" />
+            <h5>Video game</h5>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="price">599,-</span>
+            <a href="#" class="cta">View</a>
+          </div>
+          <div class="product">
+            <img src="images/Placeholder.png" alt="Video Game Cover" />
+            <h5>Video game</h5>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="price">599,-</span>
+            <a href="#" class="cta">View</a>
+          </div>
+          <div class="product">
+            <img src="images/Placeholder.png" alt="Video Game Cover" />
+            <h5>Video game</h5>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="price">599,-</span>
+            <a href="#" class="cta">View</a>
+          </div>
+          <div class="product">
+            <img src="images/Placeholder.png" alt="Video Game Cover" />
+            <h5>Video game</h5>
+            <p>Lorem ipsum dolor sit amet</p>
+            <span class="price">599,-</span>
+            <a href="#" class="cta">View</a>
+          </div>
+        </section>
+        <section>
+          <h4 class="product__header">Genres</h4>
+          <div class="mp-list">
+            <a href="#">Action</a>
+            <a href="#">RPG</a>
+            <a href="#">Strategy</a>
+            <a href="#">Simulation</a>
+            <a href="#">Casual</a>
+            <a href="#">Shooter</a>
+            <a href="#">Adventure</a>
+            <a href="#">Sports</a>
+            <a href="#">Fighting</a>
+            <a href="#">Platform</a>
+            <a href="#">Puzzle</a>
+            <a href="#">Racing</a>
+          </div>
+          <h4 class="product__header">Platform</h4>
+          <div class="mp-list">
+            <a href="#">Windows PC</a>
+            <a href="#">Apple Mac</a>
+            <a href="#">Sony Playstation</a>
+            <a href="#">Microsoft Xbox</a>
+            <a href="#">Nintendo Switch</a>
+            <a href="#">Virtual Reality</a>
+            <a href="#">Retro Consoles</a>
+            <a href="#">Tabletop</a>
+          </div>
+          <h4 class="product__header">Release year</h4>
+          <div class="mp-list">
+            <a href="#">1970s</a>
+            <a href="#">1980s</a>
+            <a href="#">1990s</a>
+            <a href="#">2000s</a>
+            <a href="#">2010s</a>
+            <a href="#">2020s</a>
+            <a href="#">New</a>
+            <a href="#">Upcoming</a>
+          </div>
+          <h4 class="product__header">ESRB Rating</h4>
+          <div class="mp-list">
+            <a href="#">EC (Early Childhood)</a>
+            <a href="#">E (Everyone)</a>
+            <a href="#">E10+ (Everyone 10+)</a>
+            <a href="#">T (Teen)</a>
+            <a href="#">M (Mature)</a>
+            <a href="#">RP (Rating Pending)</a>
+            <a href="#">AO (Adults Only)</a>
+          </div>
+        </section>
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>
@@ -218,3 +199,4 @@
       <p><a href="#">Contact Us</a></p>
     </footer>
   </body>
+</html>
