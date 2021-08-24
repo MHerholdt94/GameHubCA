@@ -24,7 +24,7 @@
         <input
           type="text" name="q" id="searchbar"
           placeholder="Search for over 3000 games..."
-          class="search-bar"
+          class="search-bar inherit"
         />
       </div>
         <ul>
@@ -66,92 +66,94 @@
         <li>Checkout</li>
       </ul>
     </header>
+
     <div class="contact_sticky">
       <a href="#" class="contact_cta">Contact us</a>
     </div>
-      <section class="checkout-container">
+
+    <section class="checkout-container">
       <div class="checkout-box">
         <h1>Checkout</h1>
       <div class="checkout-form">
-      <h4>Delivery</h4>
-      <p class="checkout-disclaimer"><span class="disclaimer-red">NB!</span> With the purchase of a digital copy you will get an email with a code to use in the store of the chosen platform</p>
-      </div>
-      <div class="checkout-grid">
-      <div class="checkout-form payment">
-      <h4>Payment</h4>
-      <form action="submit.php" method="POST">
-        <label for="card">Card number</label>
-        <input type="number" id="card" class="checkout-card">
-          <label for="month">Expiration date</label>
-          <select name="month" id="month" class="exp-date">
-            <option value="january">01</option>
-            <option value="february">02</option>
-            <option value="march">03</option>
-            <option value="april">04</option>
-            <option value="may">05</option>
-            <option value="june">06</option>
-            <option value="july">07</option>
-            <option value="august">08</option>
-            <option value="september">09</option>
-            <option value="october">10</option>
-            <option value="november">11</option>
-            <option value="december">12</option>
-          </select>
-          <select name="year" id="year" class="exp-date">
-            <option value="22">2022</option>
-            <option value="23">2023</option>
-            <option value="24">2024</option>
-            <option value="25">2025</option>
-            <option value="26">2026</option>
-          </select>
-        <label for="security">Security code</label>
-        <input type="number" id="security" class="sec-code">
-      </form>
-    </div>
-    <div class="checkout-form billing">
-      <h4>Billing</h4>
-      <form>
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname">
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname">
-        <label for ="city">City</label>
-        <input type="text" name="city" id="city">
-        <label for="address">Address</label>
-        <input type="text" name="address" id="address">
-        <label for="postal">Postal Code</label>
-        <input type="number" name="postal" id="postal">
-        <label for="country">Country</label>
-        <select name="country" id="country">
-          <option value="norway">Norway</option>
-          <option value="uk">UK</option>
-          <option value="sweden">Sweden</option>
-          <option value="argentina">Argentina</option>
-        </select>
-        <label for="tel">Phone</label>
-        <input type="tel" name="tel" id="tel">
-        <div class="checkout-submit">
-          <input type="submit" value="Confirm payment">
+        <h5>Delivery</h5>
+        <p class="checkout-disclaimer"><span class="disclaimer-red">NB!</span> With the purchase of a digital copy you will get an email with a code to use in the store of the chosen platform</p>
         </div>
-      </form>
-    </div>
-  </div>
-  </div>
-    <div class="cart-box">
-      <i class="fas fa-shopping-cart"></i>
-      <h4>Your cart</h4>
-      <div class="cart-info">
-        <p>Items</p>
-        <p>399,-</p>
-        <p>Shipping</p>
-        <p>Free</p>
-        <p><strong>TOTAL</strong></p>
-        <p><strong>399,-</strong></p>
+        <div class="checkout-grid">
+          <div class="checkout-form payment">
+            <h5>Payment</h5>
+            <form action="submit.php" method="POST">
+              <label for="card">Card number</label>
+              <input type="number" id="card" class="checkout-card">
+                <label for="month">Expiration date</label>
+                <select name="month" id="month" class="exp-date">
+                  <option value="january">01</option>
+                  <option value="february">02</option>
+                  <option value="march">03</option>
+                  <option value="april">04</option>
+                  <option value="may">05</option>
+                  <option value="june">06</option>
+                  <option value="july">07</option>
+                  <option value="august">08</option>
+                  <option value="september">09</option>
+                  <option value="october">10</option>
+                  <option value="november">11</option>
+                  <option value="december">12</option>
+                </select>
+                <select name="year" id="year" class="exp-date">
+                  <option value="22">2022</option>
+                  <option value="23">2023</option>
+                  <option value="24">2024</option>
+                  <option value="25">2025</option>
+                  <option value="26">2026</option>
+                </select>
+              <label for="security">Security code</label>
+              <input type="number" id="security" class="sec-code">
+            </form>
+          </div>
+          <div class="checkout-form billing">
+            <h5>Billing</h5>
+            <form>
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname">
+              <label for ="city">City</label>
+              <input type="text" name="city" id="city">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address">
+              <label for="postal">Postal Code</label>
+              <input type="number" name="postal" id="postal">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="norway">Norway</option>
+                <option value="uk">UK</option>
+                <option value="sweden">Sweden</option>
+                <option value="argentina">Argentina</option>
+              </select>
+              <label for="tel">Phone</label>
+              <input type="tel" name="tel" id="tel">
+              <div class="checkout-submit">
+                <input type="submit" value="Confirm payment" class="inherit">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+      <div class="cart-box">
+        <i class="fas fa-shopping-cart"></i>
+        <h5>Your cart</h5>
+        <div class="cart-info">
+          <p>Items</p>
+          <p>399,-</p>
+          <p>Shipping</p>
+          <p>Free</p>
+          <p><strong>TOTAL</strong></p>
+          <p><strong>399,-</strong></p>
+        </div>
       <p class="cart-discount">Got a discount code? <a href="#">Click here!</a></p>
       <div class="cart-content">
         <img src="images/Placeholder.png" alt="Video Game Box Art">
-        <h4>Video Game</h4>
+        <h6>Video Game</h6>
         <div class="cart-info">
           <p>Platform:</p>
           <p>PS4</p>
@@ -164,7 +166,7 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>

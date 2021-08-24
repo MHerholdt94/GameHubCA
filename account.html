@@ -24,7 +24,7 @@
       <input
         type="text" name="q" id="searchbar"
         placeholder="Search for over 3000 games..."
-        class="search-bar"
+        class="search-bar inherit"
       />
     </div>
       <ul>
@@ -68,23 +68,27 @@
       <a href="#" class="contact_cta">Contact us</a>
     </div>
 
-    <section class="account-container">
-      <div class="account-form">
-        <div class="account-logo"></div>
-        <h4>Create an account</h4>
-        <a href="#"><i class="fab fa-facebook-f"></i>Sign in with Facebook</a>
-        <p>-or-</p>
+    <section class="acc-container">
+      <div class="acc-form">
+        <img src="images/GameHub_Logo.png" alt="Game Hub Logo">
+        <p class="acc-create">Create an account</p>
+        <a href="#" class="acc-fb"><i class="fab fa-facebook-square"></i>Sign in with Facebook</a>
+        <p class="acc-or">-or-</p>
         <form action="submit.php" method="POST">
           <label for="email">Email</label>
           <input type="email" name="email">
           <label for="password">Password</label>
           <input type="password" name="password">
-          <input type="submit" value="Get started">
+          <div class="acc-submit">
+            <input type="submit" value="Get started" class="inherit">
+          </div>
         </form>
       </div>
-      <div class="account-header">
-        <h1>Enter the universe of games</h1>
-        <h3>Create an account to gain access to everything Game Hub has to offer</h3>
+      <div class="acc-slogan">
+        <div class="layer">
+          <h1>Enter the universe of games</h1>
+          <p class="subtext">Create an account to gain access to everything Game Hub has to offer</p>
+        </div>
       </div>
     </section>
 
