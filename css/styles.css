@@ -4,10 +4,12 @@
     --white: #f2f2f2;
     --red: #bf2a2a;
     --dark-grey: #343434;
+    --fade-grey: #34343450;
     --yellow: #8c6f23;
     --blue-grey: #484d64;
     --light-blue: #b9c4ce;
     --dark-blue: #1d2540;
+    --black-shadow: #00000035;
 }
 
 body {
@@ -320,7 +322,7 @@ header {
     background: var(--white);
     color: var(--dark-grey);
     border: 1px solid var(--dark-grey);
-    box-shadow: #5f5f5f60 2px 2px;
+    box-shadow: var(--black-shadow) 2px 2px 5px;
     padding: 15px 75px;
     font-size: 1.3em;
     margin-left: 132px;
@@ -510,7 +512,7 @@ div img {
     font-weight: 550;
     background: var(--white);
     color: var(--dark-grey);
-    box-shadow: var(--dark-grey) 2px 2px 5px;
+    box-shadow: var(--black-shadow) 2px 2px 5px;
 }
 
 /* Product Page */
@@ -718,7 +720,7 @@ div img {
 
 .review {
     border-radius: 15px;
-    box-shadow: var(--dark-grey) 1px 1px 3px;
+    box-shadow: var(--black-shadow) 1px 1px 3px;
     padding: 15px;
     text-align: center;
     font-weight: 100;
@@ -734,6 +736,201 @@ div img {
 
 .review i {
     color: var(--yellow);
+}
+
+/* Checkout Page */
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    max-width: 1088px;
+    margin: 100px auto;
+}
+
+.checkout-box {
+    border: 1px solid var(--fade-grey);
+}
+
+.checkout-box h1 {
+    background: var(--dark-grey);
+    color: var(--white);
+    margin: 0;
+    padding-left: 15px;
+}
+
+.checkout-form {
+    margin: 32px 25px 16px 25px;
+}
+
+.checkout-form label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-top: 21px;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkout-box input,
+select {
+    border: 1px solid var(--fade-grey);
+    font-size: 1em;
+    padding: 10px;
+}
+
+.checkout-card {
+    width: 350px;
+}
+
+.sec-code {
+    max-width: 50px;
+}
+
+.checkout-box h4 {
+    border-bottom: 1px solid var(--fade-grey);
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+
+.checkout-disclaimer {
+    background: var(--white);
+    border: 1px solid var(--dark-grey);
+    color: var(--dark-grey);
+    max-width: 300px;
+    padding: 5px 10px;
+}
+
+.disclaimer-red {
+    display: block;
+    color: var(--red);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.checkout-submit input {
+    position: relative;
+    right: 200px;
+    margin: 50px auto;
+    padding: 15px 125px;
+    background: var(--light-blue);
+    color: var(--dark-grey);
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-box {
+    background-color: var(--white);
+    color: var(--dark-grey);
+    box-shadow: var(--black-shadow) 1px 1px 3px;
+    text-align: center;
+    width: 120%;
+}
+
+.cart-box i {
+    font-size: 3em;
+    color: var(--dark-grey);
+    margin-top: 16px;
+}
+
+.cart-box h4 {
+    font-weight: 400;
+    margin: 10px;
+}
+
+.cart-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.cart-discount {
+    border-top: 1px solid var(--fade-grey);
+    border-bottom: 1px solid var(--fade-grey);
+    padding: 10px 0;
+    max-width: 90%;
+    margin: 32px auto;
+}
+
+.cart-discount a {
+    display: block;
+    color: var(--hyperlink-blue);
+    font-weight: 900;
+}
+
+.cart-content {
+    background-color: #fff;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 1px 1px 5px var(--black-shadow);
+    padding-bottom: 10px;
+}
+
+.cart-content img {
+    margin-top: 8px;
+}
+
+.cart-content h4 {
+    text-align: left;
+    margin: 0 0 5px 15px;
+    font-weight: 600;
+}
+
+.cart-content p {
+    margin: 5px;
+}
+
+/* Thank You For Purchase Page */
+.thanks-header {
+    background: url(../images/Controller.jpeg);
+    background-size: cover;
+    max-width: 1640px;
+    height: 729px;
+    margin: auto;
+    text-align: center;
+}
+
+.thanks-header h1 {
+    margin-left: 900px;
+    padding: 75px 0;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+    max-width: 650px;
+    text-align: center;
+}
+
+.thanks-header a {
+    background: var(--dark-grey);
+    color: var(--white);
+    padding: 15px 75px;
+    font-size: 1.625em;
+    font-weight: 900;
+    margin-left: 800px;
+    box-shadow: 2px 2px 5px var(--black-shadow);
+}
+
+/* Create Account Page */
+.account-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 1088px;
+    text-align: center;
+}
+
+.account-form form {
+    max-width: 75%;
+    margin: auto;
+}
+
+.account-form label {
+    display: block;
 }
 
 /* Footer */
