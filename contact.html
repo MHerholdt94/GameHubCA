@@ -35,9 +35,6 @@
             <a href="#"><i class="fas fa-user-alt"></i>Profile</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-heart"></i>Favourites</a>
-          </li>
-          <li>
             <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
           </li>
         </ul>
@@ -65,56 +62,58 @@
       </ul>
     </header>
 
-    <h1 class="c-title">How can we help?</h1>
-    <section class="c-container">
-      <div>
-        <div class="contact c-left">
-          <i class="fas fa-phone-alt"></i>
-          <h5>Give us a call</h5>
-          <p class="phone">+47 1234 5678</p>
-          <div class="c-hours">
-            <p>Opening hours:</p>
-            <ul>
-              <li>Mon - Fri: 09 - 16</li>
-              <li>Saturday: 10 - 14</li>
-              <li>Sunday: Closed</li>
-            </ul>
-          </div>
-        </div>
+    <main>
+      <h1 class="c-title">How can we help?</h1>
+      <section class="c-container">
         <div>
-          <div class="c-social">
-            <p class="c-fb">Find us on Facebook</p>
-            <p class="c-tw">Follow us on Twitter</p>
-            <p class="c-ig">Follow us on Instagram</p>
+          <div class="contact c-left">
+            <i class="fas fa-phone-alt"></i>
+            <h5>Give us a call</h5>
+            <p class="phone">+47 1234 5678</p>
+            <div class="c-hours">
+              <p>Opening hours:</p>
+              <ul>
+                <li>Mon - Fri: 09 - 16</li>
+                <li>Saturday: 10 - 14</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="c-social">
+              <p class="c-fb">Find us on Facebook</p>
+              <p class="c-tw">Follow us on Twitter</p>
+              <p class="c-ig">Follow us on Instagram</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="contact c-right">
-        <i class="fas fa-at"></i>
-        <h5>Send us an email</h5>
-        <form action="submit.php" method="POST">
-          <label for="firstname">First Name</label>
-          <input type="text" name="firstname" id="firstname">
-          <label for="lastname">Last Name</label>
-          <input type="text" name="lastname" id="lastname">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="comment">Comment</label>
-          <textarea id="comment" name="comment" id="comment"></textarea>
-          <div class="c-checkbox">
-            <input type="checkbox" name="policy" id="policy">
-            <label for="policy" class="c-label">I have read and understood our <a href="#">privacy policy</a></label>
-          </div>
-          <div class="c-checkbox">
-            <input type="checkbox" name="newsletter" id="newsletter">
-            <label for="newsletter" class="c-label">Sign up for newsletter</label>
-          </div>
-          <div class="c-submit">
-            <input type="submit" name="submit" value="Send message" class="inherit">
-          </div>
-        </form>
-      </div>
-    </section>
+        <div class="contact c-right">
+          <i class="fas fa-at"></i>
+          <h5>Send us an email</h5>
+          <form action="submit.php" method="POST">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" id="comment"></textarea>
+            <div class="c-checkbox">
+              <input type="checkbox" name="policy" id="policy">
+              <label for="policy" class="c-label">I have read and understood our <a href="#">privacy policy</a></label>
+            </div>
+            <div class="c-checkbox">
+              <input type="checkbox" name="newsletter" id="newsletter">
+              <label for="newsletter" class="c-label">Sign up for newsletter</label>
+            </div>
+            <div class="c-submit">
+              <input type="submit" name="submit" value="Send message" class="inherit">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>

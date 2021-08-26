@@ -35,9 +35,6 @@
             <a href="#"><i class="fas fa-user-alt"></i>Profile</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-heart"></i>Favourites</a>
-          </li>
-          <li>
             <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
           </li>
         </ul>
@@ -64,43 +61,49 @@
         <li>Marketplace</li>
       </ul>
     </header>
-    <div class="mp-image">
-      <h1>Welcome to the universe of games!</h1>
-      <div class="mp-cta">
-        <p>What are you interested in?</p>
-        <div>
-          <a href="#" class="mp-new"><i class="fas fa-gamepad"></i>New releases</a>
-          <a href="#" class="mp-old">Old classics<i class="fas fa-chess-pawn"></i></a>
+
+    <div class="mp-container">
+      <div class="mp-image">
+        <h1>Welcome to the <br> universe of games!</h1>
+        <div class="mp-cta">
+          <p>What are you interested in?</p>
+          <div>
+            <a href="#" class="mp-new"><i class="fas fa-gamepad"></i>New releases</a>
+            <a href="#" class="mp-old">Old classics<i class="fas fa-chess-pawn"></i></a>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="contact_sticky">
       <a href="#" class="contact_cta">Contact us</a>
     </div>
-    <section class="mp-nav">
-      <h2>Game Hub Marketplace</h2>
-      <div class="mp-sort">
-        <span>Sort by:</span>
-        <input type="radio" name="sort" id="recommended" checked>
-        <input type="radio" name="sort" id="genre">
-        <input type="radio" name="sort" id="platform">
-        <input type="radio" name="sort" id="year">
-        <input type="radio" name="sort" id="esrb">
 
-        <label for="recommended">Recommended</label>
-        <label for="genre">Genre</label>
-        <label for="platform">Platform</label>
-        <label for="year">Release Year</label>
-        <label for="esrb">ESRB Rating</label>
-      </div>
-      <div class="mp-search">
-        <label for="mp-searchbar">Search:</label>
-        <input
-          type="text" name="mp-searchbar" id="mp-searchbar"
-          placeholder="Search for over 3000 games..."
-          class="mp-search-bar inherit"/>
-      </div>
-    </section>
+    <main>
+      <section class="mp-nav">
+        <h2>Game Hub Marketplace</h2>
+        <div class="mp-sort">
+          <span>Sort by:</span>
+          <input type="radio" name="sort" id="recommended" checked>
+          <input type="radio" name="sort" id="genre">
+          <input type="radio" name="sort" id="platform">
+          <input type="radio" name="sort" id="year">
+          <input type="radio" name="sort" id="esrb">
+
+          <label for="recommended">Recommended</label>
+          <label for="genre">Genre</label>
+          <label for="platform">Platform</label>
+          <label for="year">Release Year</label>
+          <label for="esrb">ESRB Rating</label>
+        </div>
+        <div class="mp-search">
+          <label for="mp-searchbar">Search:</label>
+          <input
+            type="text" name="mp-searchbar" id="mp-searchbar"
+            placeholder="Search for over 3000 games..."
+            class="mp-search-bar inherit"/>
+        </div>
+      </section>
       <section class="featured">
         <h4 class="product__header">Recommended for you</h4>
         <section class="products__list">
@@ -189,6 +192,8 @@
             <a href="#">AO (Adults Only)</a>
           </div>
         </section>
+      </main>
+
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>
@@ -198,5 +203,6 @@
       <p><a href="#">Login</a></p>
       <p><a href="#">Contact Us</a></p>
     </footer>
+    
   </body>
 </html>
