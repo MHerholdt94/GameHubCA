@@ -27,17 +27,11 @@
           class="search-bar inherit"
         />
       </div>
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-sign-in-alt"></i>Login</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-user-alt"></i>Profile</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
-          </li>
-        </ul>
+      <div class="nav-icons">
+        <a href="#" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="#" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
+        <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
+      </div>
       </nav>
       <nav class="social-nav">
         <ul>
@@ -53,8 +47,13 @@
           </li>
         </ul>
       </nav>
-      <section class="back">
-        <a href="#"><i class="fas fa-arrow-left"></i></a>
+      <section class="bluebar">
+        <div>
+          <a href="#" class="back"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div>
+          <a href="#" class="contact-nav">Contact us</a>
+        </div>
       </section>
       <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
@@ -62,17 +61,19 @@
       </ul>
     </header>
 
-    <div class="contact_sticky">
+    <div class="contact-sticky">
       <a href="#" class="contact_cta">Contact us</a>
     </div>
 
     <main>
       <h1 class="profile-title">Hello Name Namesen</h1>
       <section class="profile-container profile-info">
-        <div>
-          <img src="images/Profile_Picture.jpg" alt="Your profile picture">
+        <div class="p-left">
+          <div class="profile-picture">
+            <img src="images/Profile_Picture.jpg" alt="Your profile picture">
+          </div>
           <p class="p-location"><i class="fas fa-map-marker-alt"></i>Oslo</p>
-          <ul>
+          <ul class="p-facts">
             <li>Games sold: 10</li>
             <li>Games bought: 14</li>
             <li>Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
@@ -83,9 +84,11 @@
           <textarea id="about" name="about" id="about"></textarea>
         </div>
         <div class="p-buttons">
-          <a href="#">Reviews</a>
-          <a href="#">Favourites</a>
-          <a href="#">Transactions</a>
+          <ul>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Transactions</a></li>
+          </ul>
         </div>
       </section>
       <section class="profile-container profile-reviews">
