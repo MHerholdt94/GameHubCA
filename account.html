@@ -19,7 +19,7 @@
       <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
     /></a>
     <nav class="navigation">
-      <div class="search-header">
+      <div class="navigation__search">
       <label for="q">Search Gamehub:</i></label>
       <input
         type="text" name="q" id="searchbar"
@@ -27,22 +27,22 @@
         class="search-bar inherit"
       />
     </div>
-    <div class="nav-icons">
-      <a href="#" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
-      <a href="#" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
-      <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
+    <div class="navigation__icons">
+      <a href="account.html" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
+      <a href="profile.html" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
+      <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
     </div>
     </nav>
     <div class="ham-container">
       <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
-      <nav class="ham-nav">
+      <nav class="ham-container__nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Cart</a></li>
-          <li class="ham-contact"><a href="#">Contact Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="account.html">Login</a></li>
+          <li><a href="checkout.html">Cart</a></li>
+          <li class="ham-contact"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -62,28 +62,28 @@
     </nav>
     <section class="bluebar">
       <div>
-        <a href="#" class="back"><i class="fas fa-arrow-left"></i></a>
+        <a href="index.html" class="bluebar__back"><i class="fas fa-arrow-left"></i></a>
       </div>
       <div>
-        <a href="#" class="contact-nav">Contact us</a>
+        <a href="contact.html" class="bluebar__contact">Contact us</a>
       </div>
     </section>
     <ul class="breadcrumb">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li>Create Account</li>
     </ul>
   </header>
   
   <div class="contact-sticky">
-    <a href="#" class="contact_cta">Contact us</a>
+    <a href="contact.html" class="contact-cta">Contact us</a>
   </div>
 
   <main>
-    <section class="acc-container">
-      <div class="acc-form">
+    <section class="account-container">
+      <div class="account-container__form">
         <img src="images/GameHub_Logo.png" alt="Game Hub Logo">
         <p class="acc-create">Create an account</p>
-        <a href="#" class="acc-fb"><i class="fab fa-facebook-square"></i>Sign in with Facebook</a>
+        <a href="profile.html" class="acc-fb"><i class="fab fa-facebook-square"></i>Sign in with Facebook</a>
         <p class="acc-or">-or-</p>
         <form action="submit.php" method="POST">
           <label for="email">Email</label>
@@ -91,27 +91,30 @@
           <label for="password">Password</label>
           <input type="password" name="password">
           <div class="acc-submit">
-            <input type="submit" value="Get started" class="inherit">
+            <a href="profile.html">Get started</a>
           </div>
         </form>
       </div>
-      <div class="acc-slogan">
+      <div class="account-container__title">
         <div>
           <h1>Enter the universe of games</h1>
           <p class="subtext">Create an account to gain access to everything Game Hub has to offer</p>
         </div>
       </div>
     </section>
+    <div class="mobile-back">
+      <a href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+    </div>
   </main>
 
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>
-      <p><a href="#">Marketplace</a></p>
+      <p><a href="marketplace.html">Marketplace</a></p>
       <img src="images/GameHub_Logo.png" alt="Game Hub Logo" />
-      <p><a href="#">Create Account</a></p>
-      <p><a href="#">Login</a></p>
-      <p><a href="#">Contact Us</a></p>
+      <p><a href="account.html">Create Account</a></p>
+      <p><a href="profile.html">Login</a></p>
+      <p><a href="contact.html">Contact Us</a></p>
     </footer>
   </body>
 </html>

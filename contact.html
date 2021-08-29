@@ -19,7 +19,7 @@
         <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
       /></a>
       <nav class="navigation">
-        <div class="search-header">
+        <div class="navigation__search">
         <label for="q">Search Gamehub:</i></label>
         <input
           type="text" name="q" id="searchbar"
@@ -27,22 +27,22 @@
           class="search-bar inherit"
         />
       </div>
-      <div class="nav-icons">
-        <a href="#" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
-        <a href="#" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
-        <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
+      <div class="navigation__icons">
+        <a href="account.html" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="profile.html" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
+        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
       </div>
       </nav>
       <div class="ham-container">
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu">
-        <nav class="ham-nav">
+        <nav class="ham-container__nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cart</a></li>
-            <li class="ham-contact"><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="account.html">Login</a></li>
+            <li><a href="checkout.html">Cart</a></li>
+            <li class="ham-contact"><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -62,27 +62,27 @@
       </nav>
       <section class="bluebar">
         <div>
-          <a href="#" class="back"><i class="fas fa-arrow-left"></i></a>
+          <a href="index.html" class="bluebar__back"><i class="fas fa-arrow-left"></i></a>
         </div>
         <div>
-          <a href="#" class="contact-nav">Contact us</a>
+          <a href="contact.html" class="bluebar__contact">Contact us</a>
         </div>
       </section>
       <ul class="breadcrumb">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li>Contact Us</li>
       </ul>
     </header>
 
     <main>
-      <h1 class="c-title">How can we help?</h1>
-      <section class="c-container">
+      <h1 class="contact-title">How can we help?</h1>
+      <section class="contact-container">
         <div>
-          <div class="contact c-left">
+          <div class="contact contact-container__call">
             <i class="fas fa-phone-alt"></i>
             <h5>Give us a call</h5>
             <p class="phone">+47 1234 5678</p>
-            <div class="c-hours">
+            <div class="contact-hours">
               <p>Opening hours:</p>
               <ul>
                 <li>Mon - Fri: 09 - 16</li>
@@ -91,15 +91,13 @@
               </ul>
             </div>
           </div>
-          <div>
-            <div class="c-social">
-              <p class="c-fb">Find us on Facebook</p>
-              <p class="c-tw">Follow us on Twitter</p>
-              <p class="c-ig">Follow us on Instagram</p>
-            </div>
+          <div class="contact-social">
+            <p class="c-fb">Find us on Facebook</p>
+            <p class="c-tw">Follow us on Twitter</p>
+            <p class="c-ig">Follow us on Instagram</p>
           </div>
         </div>
-        <div class="contact c-right">
+        <div class="contact contact-container__email">
           <i class="fas fa-at"></i>
           <h5>Send us an email</h5>
           <form action="submit.php" method="POST">
@@ -111,30 +109,33 @@
             <input type="email" name="email" id="email">
             <label for="comment">Comment</label>
             <textarea id="comment" name="comment" id="comment"></textarea>
-            <div class="c-checkbox">
+            <div class="contact-checkbox">
               <input type="checkbox" name="policy" id="policy">
-              <label for="policy" class="c-label">I have read and understood our <a href="#">privacy policy</a></label>
+              <label for="policy" class="c-label">I have read and understood our privacy policy</label>
             </div>
-            <div class="c-checkbox">
+            <div class="contact-checkbox">
               <input type="checkbox" name="newsletter" id="newsletter">
               <label for="newsletter" class="c-label">Sign up for newsletter</label>
             </div>
-            <div class="c-submit">
+            <div class="contact-submit">
               <input type="submit" name="submit" value="Send message" class="inherit">
             </div>
           </form>
         </div>
       </section>
+      <div class="mobile-back">
+        <a href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+      </div>
     </main>
     
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>
-      <p><a href="#">Marketplace</a></p>
+      <p><a href="marketplace.html">Marketplace</a></p>
       <img src="images/GameHub_Logo.png" alt="Game Hub Logo" />
-      <p><a href="#">Create account</a></p>
-      <p><a href="#">Login</a></p>
-      <p><a href="#">Support</a></p>
+      <p><a href="account.html">Create account</a></p>
+      <p><a href="profile.html">Login</a></p>
+      <p><a href="contact.html">Contact Us</a></p>
     </footer>
   </body>
 </html>

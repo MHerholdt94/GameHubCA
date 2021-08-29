@@ -19,7 +19,7 @@
         <img src="../images/GameHub_Logo.png" alt="Game Hub Logo" class="logo"
       /></a>
       <nav class="navigation">
-        <div class="search-header">
+        <div class="navigation__search">
         <label for="q">Search Gamehub:</i></label>
         <input
           type="text" name="q" id="searchbar"
@@ -27,22 +27,22 @@
           class="search-bar inherit"
         />
       </div>
-      <div class="nav-icons">
-        <a href="#" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
-        <a href="#" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
-        <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
+      <div class="navigation__icons">
+        <a href="account.html" class="login-icon"><i class="fas fa-sign-in-alt"></i>Login</a>
+        <a href="profile.html" class="profile-icon"><i class="fas fa-user-alt"></i>Profile</a>
+        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart"></i>Cart</a>
       </div>
       </nav>
       <div class="ham-container">
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu">
-        <nav class="ham-nav">
+        <nav class="ham-container__nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cart</a></li>
-            <li class="ham-contact"><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="account.html">Login</a></li>
+            <li><a href="checkout.html">Cart</a></li>
+            <li class="ham-contact"><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
       </div>
@@ -62,44 +62,44 @@
       </nav>
       <section class="bluebar">
         <div>
-          <a href="#" class="back"><i class="fas fa-arrow-left"></i></a>
+          <a href="index.html" class="bluebar__back"><i class="fas fa-arrow-left"></i></a>
         </div>
         <div>
-          <a href="#" class="contact-nav">Contact us</a>
+          <a href="contact.html" class="bluebar__contact">Contact us</a>
         </div>
       </section>
       <ul class="breadcrumb">
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li>Profile</li>
       </ul>
     </header>
 
     <div class="contact-sticky">
-      <a href="#" class="contact_cta">Contact us</a>
+      <a href="contact.html" class="contact-cta">Contact us</a>
     </div>
 
     <main>
       <h1 class="profile-title">Hello Name Namesen</h1>
       <section class="profile-container profile-info">
-        <div class="p-left">
+        <div>
           <div class="profile-picture">
             <img src="images/Profile_Picture.jpg" alt="Your profile picture">
           </div>
-          <p class="p-location"><i class="fas fa-map-marker-alt"></i>Oslo</p>
-          <ul class="p-facts">
+          <p class="profile-location"><i class="fas fa-map-marker-alt"></i>Oslo</p>
+          <ul class="profile-facts">
             <li>Games sold: 10</li>
             <li>Games bought: 14</li>
             <li>Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
           </ul>
         </div>
-        <div class="p-text">
+        <div class="profile-text">
           <form>
             <label for="about">Tell something about yourself</label>
             <textarea id="about" name="about" id="about"></textarea>
-            <input type="submit" value="Save" class="p-text-submit inherit">
+            <input type="submit" value="Save" class="profile-text__submit inherit">
           </form>
         </div>
-        <div class="p-buttons">
+        <div class="profile-buttons">
           <ul>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Favourites</a></li>
@@ -136,32 +136,32 @@
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
         <div class="p-fav">
           <i class="fas fa-heart"></i>
           <p>Video Game</p>
-          <a href="#" class="p-link">View in store</a>
+          <a href="product.html" class="profile-link">View in store</a>
         </div>
       </section>
       <section class="profile-container profile-transactions">
@@ -175,7 +175,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans">
@@ -187,7 +187,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans remove">
@@ -199,7 +199,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans remove">
@@ -211,7 +211,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
 
@@ -224,7 +224,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans">
@@ -236,7 +236,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans remove">
@@ -248,7 +248,7 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
         <div class="p-trans remove">
@@ -260,20 +260,23 @@
           <div>
             <p>Video Game</p>
             <p>399,-</p>
-            <a href="#" class="p-link">View in store</a>
+            <a href="product.html" class="profile-link">View in store</a>
           </div>
         </div>
       </section>
+      <div class="mobile-back">
+        <a href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
+      </div>
     </main>
     
     <footer>
       <p class="copyright">/ &copy; Copyright Game Hub /</p>
       <p><a href="index.html">Home</a></p>
-      <p><a href="#">Marketplace</a></p>
+      <p><a href="marketplace.html">Marketplace</a></p>
       <img src="images/GameHub_Logo.png" alt="Game Hub Logo" />
-      <p><a href="#">Create Account</a></p>
-      <p><a href="#">Login</a></p>
-      <p><a href="#">Contact Us</a></p>
+      <p><a href="account.html">Create Account</a></p>
+      <p><a href="profile.html">Login</a></p>
+      <p><a href="contact.html">Contact Us</a></p>
     </footer>
   </body>
 </html>
