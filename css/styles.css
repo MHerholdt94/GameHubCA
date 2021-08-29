@@ -880,6 +880,10 @@ select {
     border-radius: 15px;
 }
 
+.checkout-submit a {
+    padding: 15px 75px;
+}
+
 .checkout-container__cart {
     background-color: var(--white);
     color: var(--dark-grey);
