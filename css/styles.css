@@ -1416,7 +1416,7 @@ footer img {
 
 /* Media Queries */
 
-/* Desktop 1 */
+/* Desktop */
 @media (min-width: 1281px) {
     .contact-sticky {
         display: none;
