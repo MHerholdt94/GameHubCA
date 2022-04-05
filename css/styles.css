@@ -1058,7 +1058,9 @@ select {
     border: 1px solid var(--fade-grey);
     border-radius: 5px;
     font-size: 1em;
-    padding: 10px 50px;
+    width: 95%;
+    height: 34px;
+    padding-left: 8px;
 }
 
 .acc-submit {
