@@ -1298,6 +1298,17 @@ select {
     margin-bottom: 32px;
 }
 
+#validationMessage {
+    display: none;
+    background: var(--green);
+    color: var(--pure-white);
+    font-weight: 100;
+    border-radius: 10px;
+    width: 60%;
+    padding: 1px 8px;
+    margin: auto;
+}
+
 .contact i {
     font-size: 2.5em;
     color: var(--dark-grey);
@@ -1319,6 +1330,13 @@ select {
     padding-bottom: 16px;
     font-weight: lighter;
     font-size: 18px;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
 }
 
 .contact-hours {
@@ -1378,7 +1396,7 @@ select {
 
 .contact-container__email textarea {
     border: 1px solid var(--fade-grey);
-    padding: 75px 0;
+    padding: 10px 10px 130px 10px;
     max-width: 385px;
     min-width: 385px;
     min-height: 28px;
