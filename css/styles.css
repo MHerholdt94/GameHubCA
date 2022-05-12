@@ -190,7 +190,7 @@ i {
     }
 
     .bluebar__contact:hover {
-        background: var(--blue-grey);
+        background: var(--dark-blue);
         color: var(--white);
         border: 1px solid var(--blue-grey);
         padding: 15px 50px;
@@ -1746,12 +1746,19 @@ footer img {
     .bluebar__contact {
         display: inline-block;
         font-size: 18px;
-        padding: 15px 25px;
+        padding: 15px;
+        width: 150px;
+        text-align: center;
         color: var(--dark-grey);
         background: var(--white);
         border: 1px solid var(--dark-grey);
-        box-shadow: 2px 0 0 var(--white);
+        /* box-shadow: 2px 0 0 var(--white); */
         transition: 0.3s;
+    }
+
+    .bluebar-nav {
+        display: flex;
+        margin: auto;
     }
 
     h1 {
@@ -1794,8 +1801,13 @@ footer img {
         color: var(--dark-grey);
         background: var(--white);
         border: 1px solid var(--dark-grey);
-        box-shadow: 2px 0 0 var(--white);
+        /* box-shadow: 2px 0 0 var(--white); */
         transition: 0.3s;
+    }
+
+    .bluebar-nav {
+        display: flex;
+        margin: auto;
     }
 
     h1 {
